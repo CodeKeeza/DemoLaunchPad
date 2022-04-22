@@ -1,0 +1,68 @@
+.header{
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    background-color: rgba(58, 58, 59,2);
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.header__icon > .MuiSvgIcon-root{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+
+}
+.header__icon--active > .MuiSvgIcon-root{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    color: #2E7DAF;
+}
+
+.header__icon--active > p{
+    display: inline-flex !important;
+    color:#2E7DAF;
+
+}
+
+.header__icon:hover > p{
+    display: inline;
+    color: #ffffff;
+}
+
+.header__icon{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    cursor: pointer;
+    color: #ffffff;
+
+}
+
+
+.header__icon > p{
+    display: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: small;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2E7DAF;
+
+}
+
+
+.header__icons{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.header > img{
+    object-fit: contain;
+    height: 80px;
+    
+}

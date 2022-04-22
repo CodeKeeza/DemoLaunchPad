@@ -2,10 +2,70 @@
   text-align: center;
 }
 
+/* header {
+  backgroundColor: '#400CCC',
+  paddingRight: '79px',
+  paddingLeft: '118px',
+  '@media (max-width: 900px)': {
+    paddingLeft: 0,
+  },
+},
+logo: {
+  fontFamily: 'Work Sans, sans-serif',
+  fontWeight: 600,
+  color: '#FFFEFE',
+  textAlign: 'left',
+},
+menuButton: {
+  fontFamily: 'Open Sans, sans-serif',
+  fontWeight: 700,
+  size: '18px',
+  marginLeft: '38px',
+},
+toolbar: {
+  display: 'flex',
+  justifyContent: 'space-between',
+},
+drawerContainer: {
+  padding: '20px 30px',
+}, */
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.link {
+  margin: 20px;
+}
+
+.topBanner {
+  display: flex;
+  justify-content: start;
+  padding-top: 20px;
+}
+
+.logo {
+  position: fixed;
+  padding: 20px;
+  width: 100vw;
+  background-color: #161616;
+  z-index: 2;
+}
+
+.connect {
+  position: fixed;
+  right:0;
+  padding: 15px;
+  z-index: 3;
+  display: flex;
+  gap:15px;
+}
+
+.msg {
+  margin-left: 5vw;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
