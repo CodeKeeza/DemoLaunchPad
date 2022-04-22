@@ -35,7 +35,7 @@ export default function FixedBottomNavigation() {
             label="Donate"
             onClick={() =>
               swal(
-                'EVM wallet address: 0xA094417A035B56afa783607a59A298C8eFD12544',
+                'Spare a few test ETH, my friend? EVM wallet address: 0xA094417A035B56afa783607a59A298C8eFD12544',
               )
             }
             icon={<FavoriteIcon />}

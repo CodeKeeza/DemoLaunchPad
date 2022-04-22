@@ -7,6 +7,13 @@ import CssBaseline from '@mui/material/CssBaseline'
 export default function ICOForm() {
   const [liqPerc, setLiqPerc] = useState()
   const [listingRate, setListingRate] = useState()
+  const [tokensAllocated, setTokensAllocated] = useState()
+  const [maxPerUser, setMaxPerUser] = useState()
+
+  function getCalc() {
+    setMaxPerUser(liqPerc / listingRate)
+    return maxPerUser
+  }
 
   function handleLiqPerc(e) {
     setLiqPerc(e.value)
@@ -148,12 +155,15 @@ export default function ICOForm() {
       </div>
     </>
   )
+
   return (
     <>
       <CssBaseline />
       <Form
         buttonConfig={{
-          onClick: function noRefCheck() {},
+          onClick: function noRefCheck() {
+            console.log('shit')
+          },
           theme: 'primary',
         }}
         data={[
@@ -199,10 +209,18 @@ export default function ICOForm() {
               required: true,
             },
           },
+          {
+            name: 'Allocation Per User',
+            type: 'number',
+            value: { maxPerUser },
+            validation: {
+              required: true,
+            },
+          },
         ]}
         customFooter={dial}
         onSubmit={function noRefCheck() {}}
-        title="Test form"
+        title="ILO Creation Form"
       />
     </>
   )
